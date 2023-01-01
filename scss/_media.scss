@@ -52,6 +52,22 @@
   .sitenav {
     display: none;
   }
+  .site-footer {
+    .footer {
+      .footer-top {
+        display: flex;
+        flex-direction: column;
+        .footer-top-right {
+          margin-top: 60px;
+          .footer-top-right-list {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 900px) {
   .site-hero {
