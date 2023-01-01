@@ -2,4 +2,51 @@
 .site-footer {
   background-color: $footer-bg;
   padding: 100px 0px 60px 0px;
+  color: $white;
+  .footer {
+    .footer-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .footer-top-left {
+        .footer-list-menu {
+          @include list-unstyled;
+          li a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: #cfd2d3;
+            margin-top: 0;
+            margin-bottom: 13px;
+            &:hover,
+            &:focus {
+              opacity: 0.8;
+            }
+          }
+          li.title {
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: #878d90;
+          }
+          li.divider {
+            margin-top: 0;
+            margin-bottom: 35px;
+          }
+          li.last-title {
+            margin-bottom: 55px;
+          }
+        }
+        .footer-left-btn {
+          @include button;
+          padding: 20px 37px;
+          font-weight: 700;
+          font-size: 17px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
 }
