@@ -1,8 +1,8 @@
-### Castaway Website
+### Koin Landing Page
 
 - Landing Page
 
-[**Live Preview**](https://castaway-web.netlify.app/)
+[**Live Preview**](https://koin-web.netlify.app/)
 
 **Screenshot:**
 
@@ -11,10 +11,7 @@
 #### Tech Stack:
 
 - HTML5
-- CSS3
-- Javascript
-- Tailwind CSS
-- Resets.css
+- Sass (CSS)
 - Normalize.css
 
 #### Design
