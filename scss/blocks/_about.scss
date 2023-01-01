@@ -1,0 +1,74 @@
+// About
+.site-about {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  .about {
+    display: flex;
+    justify-content: space-between;
+    .about-left {
+      h2 {
+        font-family: $font-second;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 1px;
+        color: $btn-color;
+        margin-top: 0;
+        margin-bottom: 28px;
+      }
+      p {
+        width: 363px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 26px;
+        color: $text-color;
+        margin-top: 0;
+        margin-bottom: 39px;
+      }
+      .about-btn {
+        @include button;
+        padding: 16px 25px;
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+    .about-right {
+      width: 560px;
+      background-color: $gray;
+      border-radius: 6px;
+      padding: 80px;
+      h3 {
+        width: 203px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 34px;
+        color: $btn-color;
+        margin-top: 27px;
+        margin-bottom: 51px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 26px;
+        color: $text-color;
+        margin-top: 0;
+        margin-bottom: 38px;
+      }
+      .about-link {
+        float: right;
+        text-align: right;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        color: $btn-color;
+        @include trans3ms;
+        &:hover,
+        &:focus {
+          opacity: 0.8;
+        }
+        &:active {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}

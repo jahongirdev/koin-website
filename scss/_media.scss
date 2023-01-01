@@ -1,0 +1,134 @@
+// Media Queries
+@media (max-width: 1100px) {
+  .site-hero {
+    .hero {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .hero-image {
+      margin-bottom: 30px;
+    }
+  }
+  .site-about {
+    .about {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .about-left {
+        p {
+          width: auto;
+        }
+      }
+      .about-right {
+        margin-top: 60px;
+        width: auto;
+        h3 {
+          width: auto;
+        }
+      }
+    }
+  }
+  .site-video {
+    .video-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .video-content {
+        text-align: center;
+        h2 {
+          width: auto;
+        }
+        p {
+          width: auto;
+        }
+        .video-list {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .sitenav {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .site-hero {
+    .hero-brands {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+    }
+  }
+  .site-reults {
+    .results {
+      .results-box {
+        grid-template-columns: auto;
+        justify-content: center;
+        .results-child {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+}
+@media (max-width: 700px) {
+  .site-request {
+    .request {
+      h2 {
+        width: auto;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .container-md {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .hero-image {
+    padding: 0px 20px;
+  }
+  .site-hero {
+    .hero {
+      .hero-content {
+        h1 {
+          width: auto;
+          font-size: 50px;
+          line-height: 50px;
+        }
+        p {
+          width: auto;
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+  .site-built {
+    .built {
+      .built-box {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .sitenav-buttons .sitenav-search-btn {
+    display: none;
+  }
+  .site-hero {
+    .hero-brands {
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }
+}
+@media (max-width: 400px) {
+}

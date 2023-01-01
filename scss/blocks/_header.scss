@@ -1,0 +1,78 @@
+// Header
+.site-header {
+  padding: 40px 0px;
+}
+.site-navbar {
+  @include flex-center;
+  justify-content: space-between;
+}
+.site-navbar-menu {
+  @include flex-center;
+}
+.sitenav {
+  @include list-unstyled;
+  @include flex-center;
+}
+.sitenav-item {
+  margin-right: 69px;
+}
+.sitenav-link {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color;
+  transition: all 0.3s ease;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+.sitenav-buttons {
+  @include flex-center;
+  .sitenav-search-btn {
+    width: 58px;
+    height: 58px;
+    border: 1px solid $text-color;
+    color: $text-color;
+    background-color: $white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: $text-color;
+      color: $white;
+    }
+    &:active {
+      opacity: 0.8;
+    }
+  }
+  .sitenav-demo-btn {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    padding: 18px 24px;
+    background-color: $btn-color;
+    border: 1px solid $btn-color;
+    border-radius: 56px;
+    color: $white;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    &:hover {
+      background-color: $white;
+      color: $btn-color;
+    }
+    &:active,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}

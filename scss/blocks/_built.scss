@@ -1,0 +1,23 @@
+// Built
+.site-built {
+  margin-bottom: 150px;
+  .built {
+    h2 {
+      font-family: $font-second;
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 60px;
+      text-align: center;
+      letter-spacing: 1px;
+      color: $btn-color;
+      margin-top: 0;
+      margin-bottom: 86px;
+    }
+    .built-box {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}

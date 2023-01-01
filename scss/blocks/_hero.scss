@@ -1,0 +1,53 @@
+// Hero
+.site-hero {
+  background-color: $gray;
+  padding: 150px 0px;
+  .hero {
+    @include flex-center;
+    justify-content: space-between;
+    .hero-content {
+      h1 {
+        width: 420px;
+        font-family: $font-second;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 1px;
+        color: $btn-color;
+        margin-top: 0;
+        margin-bottom: 44px;
+      }
+      p {
+        width: 347px;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 31px;
+        color: $text-color;
+        margin-top: 0;
+        margin-bottom: 36px;
+      }
+      .hero-btn {
+        @include button;
+        padding: 16px 50px;
+      }
+    }
+  }
+  .hero-brands {
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      @include trans3ms;
+      cursor: pointer;
+      &:hover {
+        transform: translate(0px, -10px);
+      }
+      &:active,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+  }
+}

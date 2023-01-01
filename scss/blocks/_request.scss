@@ -1,0 +1,38 @@
+// Request
+.site-request {
+  background-color: $gray;
+  padding: 150px 0px;
+  .request {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      width: 548px;
+      font-family: $font-second;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 60px;
+      text-align: center;
+      letter-spacing: 1px;
+      color: $btn-color;
+      margin-top: 0;
+      margin-bottom: 48px;
+    }
+    P {
+      font-weight: 400;
+      font-size: 33px;
+      line-height: 36px;
+      color: $btn-color;
+      margin-top: 0;
+      margin-bottom: 48px;
+    }
+    .req-btn {
+      @include button;
+      padding: 16px 40px;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 21px;
+    }
+  }
+}

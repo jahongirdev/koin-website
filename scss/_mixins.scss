@@ -1,0 +1,31 @@
+@mixin list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+@mixin button {
+  background-color: $btn-color;
+  border: 1px solid $btn-color;
+  border-radius: 56px;
+  color: $white;
+  @include trans3ms;
+  &:hover {
+    background-color: $white;
+    color: $btn-color;
+  }
+  &:active,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+@mixin mt-mb0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@mixin trans3ms {
+  transition: all 0.3s ease;
+}
